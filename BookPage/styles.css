@@ -91,7 +91,6 @@ header {
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #F5F5F5;
-    border: solid black;
 }
 
 .book a {
@@ -177,10 +176,7 @@ footer {
     color:#4169E1;
 }
 
-
-/* ... (previous CSS) ... */
-
-/* Book Detail Page */
+/* Bookdetails css */
 .book-detail {
     margin: 30px auto;
     width: 90%;
@@ -193,8 +189,9 @@ footer {
 .breadcrumb {
     flex: 100%;
     margin-bottom: 20px;
-    font-size: 0.8rem;
-    color: #999;
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
 }
 
 .book-info {
@@ -207,27 +204,29 @@ footer {
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: center; /* Center small images vertically */
-    margin-right: 20px; /* Add spacing between big image and book details */
+    justify-content: center;
+    margin-right: 20px; 
 }
 
 .big-image img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    max-height: 900px;
 }
 
 .small-images {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center small images horizontally */
+    align-items: center;
     margin-bottom: 10px;
 }
 
 .small-images img {
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
     margin-bottom: 10px;
+    max-height: 300px;
 }
 
 .book-details {
@@ -285,15 +284,17 @@ footer {
     }
     .book-info {
         flex-direction: column;
+        align-items: center;
     }
 
     .images-container,
     .small-images {
         margin-right: 0;
+        flex-direction: row;
     }
 
     .book-details {
-        align-items: flex-start;
+        align-items: center;
         margin-top: 20px;
     }
 
