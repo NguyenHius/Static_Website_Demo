@@ -142,13 +142,15 @@ button:hover {
     background-color: #555;
 }
 
+
 footer {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
+    bottom: -5px;
     width: 100%;
+    flex-shrink: 0;
+    position: fixed;
 }
 
 .footer-nav {
@@ -209,10 +211,11 @@ footer {
 }
 
 .big-image img {
-    max-width: 100%;
-    height: auto;
+    width: 150px;
+    height: 300px;
     margin-bottom: 10px;
     max-height: 900px;
+    margin-left: 150px;
 }
 
 .small-images {
@@ -223,7 +226,7 @@ footer {
 }
 
 .small-images img {
-    max-width: 300px;
+    max-width: 100px;
     height: auto;
     margin-bottom: 10px;
     max-height: 300px;
@@ -250,7 +253,7 @@ footer {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     cursor: pointer;
 }
 
@@ -279,9 +282,6 @@ footer {
         flex-direction: row;
     }
 
-    .category {
-        width: 100%;
-    }
     .book-info {
         flex-direction: column;
         align-items: center;
@@ -309,5 +309,21 @@ footer {
 
     .book-details p {
         margin-right: 0;
+    }
+    .big-image img {
+        width: 300px;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-page{
+        flex-direction: column;
+    }
+    .category-page .book{
+        width: 100%;
+    }
+    .footer-nav{
+        font-size: 0.8rem;
     }
 }
