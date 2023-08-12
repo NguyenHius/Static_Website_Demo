@@ -14,9 +14,28 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(255, 255, 255, 0.5);
     color: #fff;
     padding: 10px 0;
+}
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .navbar {
@@ -26,6 +45,10 @@ header {
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
+}
+
+.mobile-nav-icon{
+    display: none;
 }
 
 .logo {
@@ -107,44 +130,8 @@ header {
     margin-top: 10px;
 }
 
-.contact-page {
-    text-align: center;
-    margin: 30px auto;
-    width: 90%;
-    max-width: 800px;
-}
-
-form {
-    text-align: left;
-    margin-top: 20px;
-}
-
-label, input, textarea, button {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-
 footer {
-    background-color: #333;
+    background-color: rgba(255, 255, 255, 0.5);
     color: #fff;
     padding: 10px 0;
     bottom: -5px;
@@ -178,7 +165,6 @@ footer {
     color:#4169E1;
 }
 
-/* Bookdetails css */
 .book-detail {
     margin: 30px auto;
     width: 90%;
@@ -192,8 +178,17 @@ footer {
     flex: 100%;
     margin-bottom: 20px;
     font-size: 1.3rem;
-    color: black;
+    color: white;
     text-align: center;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: white;
+}
+
+.breadcrumb a:hover {
+    color: #4169E1;
 }
 
 .book-info {
@@ -237,6 +232,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    color: white;
 }
 
 .book-details h2 {
@@ -273,8 +269,8 @@ footer {
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
+        padding: 5px 20px;
+        height: auto;
     }
 
     .nav-links {
@@ -313,6 +309,24 @@ footer {
     .big-image img {
         width: 300px;
         margin-left: 0%;
+        height: 450px;
+    }
+
+    .mobile-nav-icon{
+        display: block;
+        margin-top: 10px;
+    }
+
+    .mobile-nav-icon:hover+.nav-links {
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .small-images img {
+        padding: 10px;
     }
 }
 
