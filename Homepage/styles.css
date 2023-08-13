@@ -86,7 +86,7 @@ header {
 }
 
 .nav-links a:hover {
-    color:#4169E1;
+    color:black;
 }
 
 .category-page {
@@ -102,7 +102,7 @@ header {
 }
 
 .category-page h1 a:hover {
-    color: #4169E1;
+    color:black;
 }
 
 .book-container {
@@ -256,7 +256,12 @@ footer {
 }
 
 .footer-nav li a:hover {
-    color:#4169E1;
+    color:black;
+}
+
+.about-page {
+    color: white;
+    margin-left: 20px;
 }
 
 @media screen and (max-width: 1000px) {

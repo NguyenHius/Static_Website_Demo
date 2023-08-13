@@ -83,7 +83,7 @@ header {
 }
 
 .nav-links a:hover {
-    color:#4169E1;
+    color:black;
 }
 
 .category-page {
@@ -99,7 +99,7 @@ header {
 }
 
 .category-page h1 a:hover {
-    color: #4169E1;
+    color:black;
 }
 
 .book-container {
@@ -162,7 +162,7 @@ footer {
 }
 
 .footer-nav li a:hover {
-    color:#4169E1;
+    color:black;
 }
 
 .book-detail {
@@ -188,7 +188,7 @@ footer {
 }
 
 .breadcrumb a:hover {
-    color: #4169E1;
+    color:black;
 }
 
 .book-info {
