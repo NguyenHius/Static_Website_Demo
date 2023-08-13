@@ -264,6 +264,15 @@ footer {
     margin-left: 20px;
 }
 
+.about-cart {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    font-size: 24px;
+}
+
 @media screen and (max-width: 1000px) {
     .navbar {
         flex-direction: column;
