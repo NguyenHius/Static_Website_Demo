@@ -224,7 +224,7 @@ footer {
     max-width: 100px;
     height: auto;
     margin-bottom: 10px;
-    max-height: 300px;
+    max-height: 100px;
 }
 
 .book-details {
@@ -328,6 +328,10 @@ footer {
 
     .small-images img {
         padding: 10px;
+    }
+
+    .book-description {
+        font-size: 1rem;
     }
 }
 
